@@ -1,0 +1,16 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "L'idée est de restituer nos connaissances à travers un projet incomplet.",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm i",
+    "start": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

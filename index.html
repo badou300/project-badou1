@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first project</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="">Prénom :</label>
+        <input type="text" name="firstName" />
+      </div>
+      <div>
+        <label for="">Age :</label>
+        <input type="number" name="age" />
+      </div>
+      <div>
+        <!-- <input type="text" list="hobbies" autocomplete="off" />
+        <datalist id="hobbies">
+          <option>Football</option>
+          <option>Tennis</option>
+          <option>Rugby</option>
+          <option>Pétanque</option>
+          <option>VTT</option>
+          <option>Criquet</option>
+          <option>Football Américain</option>
+        </datalist> -->
+        <label>Mes sports préférés</label>
+        <div>
+          <select name="hobbies" multiple id="hobbiesSelect">
+            <option>Football</option>
+            <option>Tennis</option>
+            <option>Rugby</option>
+            <option>Pétanque</option>
+            <option>VTT</option>
+            <option>Criquet</option>
+            <option>Football Américain</option>
+          </select>
+        </div>
+      </div>
+      Mes amis <input name="friend" /><button id="add__friends" disabled>
+        Ajouter un ami
+      </button>
+      <div id="blocFriends">
+        <ul></ul>
+      </div>
+      <button>Valider mes choix</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
