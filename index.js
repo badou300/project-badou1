@@ -19,14 +19,13 @@ document.querySelector('form').addEventListener('submit', event => {
   const formattedFirstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
   console.log('Formatted First Name:', formattedFirstName);
   console.log('Age:', age);
-  //ça récupère le hobby sectionné
   const hobbies = Array.from(event.target.elements.hobbies.selectedOptions);
-  //ça récupère les deux hobbies sélectionnés
+  //ça récupère le hobby sectionné
   const hobbiesOne = hobbies[0].value; 
   const hobbiesTwo = hobbies[1].value; 
-  //
-   console.log('Hobbies One:', hobbiesOne);
-  console.log('Hobbies Two:', hobbiesTwo);
+  //ça récupère les deux hobbies sélectionnés
+   console.log(hobbiesOne);
+  console.log( hobbiesTwo);
 });
 
 const btnAddFriends = document.querySelector('#add__friends');
@@ -48,7 +47,7 @@ btnAddFriends.addEventListener('click', event => {
   inputFriends.value = '';
   //ça ajoute les amis à la liste
   friends.push(friendName);
-  console.log('Friend added:', friendName);
+  console.log( friendName);
   //ça met à jour le bouton Ajouter un amis
   displayFriends(friends);
 });
