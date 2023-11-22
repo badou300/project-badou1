@@ -48,7 +48,6 @@ btnAddFriends.addEventListener('click', event => {
   //ça ajoute les amis à la liste
   friends.push(friendName);
   console.log( friendName);
-  //ça met à jour le bouton Ajouter un amis
   displayFriends(friends);
 });
 
